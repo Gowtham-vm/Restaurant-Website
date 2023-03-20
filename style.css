@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 60%;
+    height: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.head-cont {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    height: 100px;
+}
+
+.nav-links {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.nav-links a {
+    color: black;
+}
+
+.nav-links li::after {
+    content: '';
+    display: block;
+    background-color: black;
+    height: 1px;
+    width: 0%;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+
+}
+
+.burger {
+    cursor: pointer;
+    display: none;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 270px;
+}
+
+.text-center h1 {
+    font-size: 60px;
+    font-family: serif;
+    max-width: 600px;
+}
+
+.btn {
+    color: white;
+    background-color: #001727;
+    padding: 10px 28px;
+    margin-top: 60px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #00060b;
+}
+
+
+.bgimg img {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.head {
+    background-color: rgb(244, 188, 164);
+}
+
+
+.food-image {
+    display: flex;
+}
+
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+    padding: 20px 50px 20px 50px;
+}
+
+.heading {
+    padding-left: 50px;
+    padding-right: 50px;
+    align-self: center;
+    max-width: 50%;
+    text-align: left;
+}
+
+.heading h1 {
+    font-family: serif;
+    font-size: 50px;
+}
+
+.heading p {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+/*.service .food-image{
+    flex-direction: row-reverse;
+}*/
+
+.service .heading {
+    padding-left: 50px;
+    padding-right: 50px;
+    align-self: center;
+}
+
+.service .food-image img {
+    width: 100%;
+    height: 100%;
+    padding: 20px 50px 20px 50px;
+}
+
+.service .head {
+    background-color: rgb(238, 223, 138);
+}
+
+.menu {
+    margin: 0px 120px;
+}
+
+.menu-heading h1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 60px;
+    font-family: serif;
+}
+
+.food-menu {
+    margin: 0px 50px 0px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    text-align: center;
+}
+
+.food-menu h3 {
+    font-size: 25px;
+    padding: 20px;
+    font-family: serif;
+}
+
+.item {
+    padding: 40px;
+}
+
+.food-menu p {
+    opacity: 0.8;
+}
+
+.image5 img {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.girl {
+    display: flex;
+}
+
+.girl img {
+    width: 80%;
+    height: auto;
+}
+
+.girl-text {
+    width: 100%;
+}
+
+.girl-text p {
+    text-align: left;
+    font-size: 18px;
+}
+
+.girl-text h3 {
+    padding-top: 20px;
+    font-family: serif;
+    font-size: 30px;
+}
+
+.person {
+    margin: 100px;
+    padding: 0px 150px;
+}
+
+.girl2 {
+    padding-top: 50px;
+}
+
+.text2 {
+    background-color: rgba(243, 162, 132, 0.906);
+    padding: 100px 90px;
+}
+
+.text2 h1 {
+    font-size: 50px;
+    font-family: serif;
+    padding-bottom: 50px;
+}
+
+.text3 {
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.foot-text h3 {
+    font-size: 40px;
+    font-family: serif;
+    padding-bottom: 20px;
+}
+
+.foot-text p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.foot-contact h3 {
+    font-size: 40px;
+    font-family: serif;
+    padding: 20px 0px
+}
+
+.foot-contact p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+
+@media (max-width:1120px) {
+    .food-menu {
+        display: block;
+    }
+
+    .menu-heading h1 {
+        font-size: 45px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .menu {
+        margin: 0%;
+    }
+
+    .item {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width:1098px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links li a {
+        padding: 0.5rem 0rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+        top: 80%;
+        right: 6%;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .food-image {
+        flex-direction: column;
+    }
+
+    .food-image img {
+        padding-right: 50px;
+    }
+
+    .heading h1 {
+        font-size: 40px;
+    }
+
+    .heading {
+        min-width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .service .food-image {
+        flex-direction: column;
+    }
+
+    .service .food-image img {
+        padding-right: 50px;
+    }
+
+    .service .heading h1 {
+        font-size: 40px;
+    }
+
+    .service .heading {
+        min-width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .girl {
+        display: block !important;
+    }
+
+    .girl2 {
+        padding-top: 50px;
+    }
+
+    .girl-img {
+        width: 60%;
+        height: auto;
+    }
+
+    .girl-text p {
+        padding-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .person {
+        margin: 0px !important;
+        padding: 50px 100px !important;
+    }
+
+    .text2 {
+        padding: 50px 45px;
+    }
+}
+
+@media (max-width:768px) {
+    .text-center h1 {
+        font-size: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-center {
+        margin-top: 150px;
+        padding: 0 60px;
+    }
+
+    .head-cont {
+        padding: 0 40px;
+    }
+
+    .bgimg img {
+        padding: 0%;
+    }
+
+    .btn {
+        margin-bottom: 50px;
+    }
+
+    .image5 img {
+        padding: 0%;
+    }
+
+    .foot {
+        padding: 0;
+    }
+}
